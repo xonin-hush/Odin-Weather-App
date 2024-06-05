@@ -23,6 +23,10 @@ Fourth project in "the odin project" JavaScript Course, it demonstrates JSON, OO
 - Some OOP Principles
 - Putting { once: true } at the end of eventListeners so you don't keep adding eventListeners on top of each other (would cause unwanted behavior)
 - Deploying projects that use webpack using netlify (which you can find below)
+
+## Fine font-family
+- https://fonts.google.com/selection/embed
+
 ## How to I managed to deploy this project
 
 ### Step 1

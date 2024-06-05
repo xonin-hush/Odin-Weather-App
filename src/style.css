@@ -6,7 +6,7 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: Poppins, sans-serif;
 display: flex;
 flex-direction: column;
 }
@@ -19,4 +19,6 @@ html {
 #header{
     width: 100%;
     background-color: purple;
+    font-weight: bolder;
+    margin-bottom: 2rem;
 }
