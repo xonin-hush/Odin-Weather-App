@@ -16,7 +16,21 @@
     <script src="./main.js" defer="defer"></script>
   </head>
 
-  <body></body>
+  <body>
+    <form>
+      <label for="location">Enter Your Location</label>
+      <input
+        type="text"
+        id="location"
+        name="location"
+        
+        required
+      />
+      <span class="error" id="location-error"></span>
+      <button  type="search" id="search">Search</button>
+    </form>
+
+  </body>
 </html>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
