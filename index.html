@@ -30,28 +30,30 @@
       <label for="location">Enter Your Location</label>
       <input type="text" id="location" name="location" required />
       <span class="error" id="location-error"></span>
-      <button type="search" id="search">Search</button>
-    </form>
-    <div id="info">
+      <div><button type="search" id="search">Search</button>
+        <button class="temp-button">°C</button><button class="temp-button">°F</button>
+      </form></div>
+      
+    <div >
       <div>
         <div class="title">Current Location</div>
-        <div id="current-location"></div>
+        <div id="current-location" class="info" ></div>
       </div>
       <div>
         <div class="title">Temperature</div>
-        <div id="temp"></div>
+        <div id="temp" class="info"></div>
       </div>
       <div>
         <div class="title">Feels Like</div>
-        <div id="feels-like"></div>
+        <div id="feels-like" class="info"></div>
       </div>
       <div>
         <div class="title">Pressure</div>
-        <div id="pressure"></div>
+        <div id="pressure" class="info"></div>
       </div>
       <div>
         <div class="title">Humidity</div>
-        <div id="humidity"></div>
+        <div id="humidity" class="info"></div>
       </div>
     </div>
   </body>
