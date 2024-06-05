@@ -2,7 +2,7 @@
 var location = "mosul";
 var tempUnit = "C";
 const search = document.getElementById("search");
-
+var myWeather = "";
 function handleSearch() {
   search.addEventListener("click", (event) => {
     event.preventDefault(); // We don't want to submit this fake form
@@ -15,11 +15,14 @@ handleSearch();
 
 async function fetchWeather() {
   console.log({ location });
-  var myWeather = await fetch(
+  var loading = document.querySelector("#loading");
+  loading.textContent = "loading";
+  myWeather = await fetch(
     `https://api.weatherapi.com/v1/current.json?key=5445bedc62eb468ca61125705240406&q=${location}`,
     { mode: "cors" }
   );
   myWeather = await myWeather.json();
+  loading.innerHTML = "";
   console.log(myWeather);
   console.log(myWeather.current.temp_c);
   await displayInfo(myWeather);
@@ -41,6 +44,19 @@ function displayInfo(myWeather) {
     feelsLike.textContent = myWeather.current.feelslike_f;
   }
   pressure.textContent = `${myWeather.current.pressure_mb} mb`;
-  humidity.textContent=   `${myWeather.current.humidity}%`
+  humidity.textContent = `${myWeather.current.humidity}%`;
   console.log("hello", myWeather.current.temp_c);
+}
+
+function changeUnit() {
+  // // console.log(myWeather)
+  // if (tempUnit === "C") {
+  //   tempUnit = "F";
+  //   // displayInfo(myWeather);
+  // }
+  // if (tempUnit === "F") {
+  //   tempUnit = "C";
+  //   // displayInfo(myWeather);
+  // }
+  console.log("helloddd")
 }

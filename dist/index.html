@@ -30,14 +30,18 @@
       <label for="location">Enter Your Location</label>
       <input type="text" id="location" name="location" required />
       <span class="error" id="location-error"></span>
-      <div><button type="search" id="search">Search</button>
-        <button class="temp-button">°C</button><button class="temp-button">°F</button>
-      </form></div>
-      
-    <div >
+      <div>
+        <button type="search" id="search">Search</button>
+        <button class="temp-button" onclick="changeUnit()">°C</button
+        ><button class="temp-button" onclick="changeUnit()">°F</button>
+        <div id="loading"></div>
+      </div>
+    </form>
+
+    <div>
       <div>
         <div class="title">Current Location</div>
-        <div id="current-location" class="info" ></div>
+        <div id="current-location" class="info"></div>
       </div>
       <div>
         <div class="title">Temperature</div>
@@ -58,7 +62,4 @@
     </div>
   </body>
 </html>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
