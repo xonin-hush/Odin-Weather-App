@@ -6,21 +6,20 @@ var location = "mosul";
 const search = document.getElementById("search");
 
 async function fetchWeather() {
-    console.log({location})
-  const myWeather = await fetch(
+  console.log({ location });
+  var myWeather = await fetch(
     `https://api.weatherapi.com/v1/current.json?key=5445bedc62eb468ca61125705240406&q=${location}`,
     { mode: "cors" }
   );
-  console.log(myWeather.json());
+  myWeather = await myWeather.json();
+  console.log(myWeather.current.temp_c);
 }
-function try1() {
+function handleSearch() {
   search.addEventListener("click", (event) => {
     event.preventDefault(); // We don't want to submit this fake form
     location = document.getElementById("location");
-    console.log(location)
-    location=location.value
-    console.log(location)
-    fetchWeather()
+    location = location.value;
+    fetchWeather();
   });
 }
-try1();
+handleSearch();
