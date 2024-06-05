@@ -1,27 +1,59 @@
 /* main css file */
 body {
-    padding: 0px;
-    margin: 0px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 6fr;
-    text-align: center;
-    font-family: Poppins, sans-serif;
-display: flex;
-flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 6fr;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 html {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+#header {
+  width: 100%;
+  background-color: #967bb6;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+.title {
+  font-weight: bolder;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin: 0.5em;
+}
+button {
+  /* align-self: end; */
+  background-color: #967bb6;
+  color: black;
+  border-color: #967bb6;
+  border-radius: 10px;
+  border-style: solid;
+  width: 4.5em;
+  height: 2em;
+  margin-bottom: 2em;
+  /* justify-self: center; */
 
+  font-weight: bolder;
 }
-#header{
-    width: 100%;
-    background-color: purple;
-    font-weight: bolder;
-    margin-bottom: 2rem;
+.temp-button {
+  width: fit-content;
 }
-.title{
-font-weight: bolder;
+button:hover {
+  background-color: #145274;
+  border-color: #145274;
+}
+.info {
+    max-height: 2em;
+    min-height: 2em;
 }
