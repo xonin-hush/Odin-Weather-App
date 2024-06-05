@@ -1,5 +1,5 @@
-# [blank](https://todo.xonin.dev)
-Fourth project in "the odin project" JavaScript Course, it demonstrates JSON, OOP Principles as of other stuff.  [The Odin Project-JavaScript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript).
+# [Weather App](https://todo.xonin.dev)
+fifth project in "the odin project" JavaScript Course, it demonstrates Promises, async await as of other stuff.  [The Odin Project-JavaScript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript).
 
 ## Links
 [Visit website](https://todo.xonin.dev)
@@ -11,14 +11,13 @@ Fourth project in "the odin project" JavaScript Course, it demonstrates JSON, OO
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 ## Features
-- Ability to create Projects
-- Ability to create Todos inside a project 
-- Ability to Remove Todos
-- All data will be stored in the local storage as a JSON file (you will not lose your data after refreshing)
+- Ability to Fetch data from weatherapi
+- Ability to change Temperature units 
+- Ability to handle errors
 ## Things I got a better understanding of
-- Dom manipulation
-- Webpack bundler
-- Handling local storage
+- Promises
+- Headers
+- 
 - JSON format 
 - Some OOP Principles
 - Putting { once: true } at the end of eventListeners so you don't keep adding eventListeners on top of each other (would cause unwanted behavior)
