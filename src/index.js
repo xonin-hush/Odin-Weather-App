@@ -1,7 +1,4 @@
 //linking modules to this main module
-import { add } from "lodash";
-import { out2 } from "./ToDo";
-import { out } from "./projects";
 var location = "mosul";
 var tempUnit = "C";
 const search = document.getElementById("search");
