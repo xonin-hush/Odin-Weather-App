@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>blank</title>
+    <title>Weather-App</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../src/style.css" />
     <link rel="stylesheet" href="../src/dialogs.css" />
@@ -17,19 +17,15 @@
   </head>
 
   <body>
+    <header id="header">
+      <h1>Weather App</h1>
+    </header>
     <form>
       <label for="location">Enter Your Location</label>
-      <input
-        type="text"
-        id="location"
-        name="location"
-        
-        required
-      />
+      <input type="text" id="location" name="location" required />
       <span class="error" id="location-error"></span>
-      <button  type="search" id="search">Search</button>
+      <button type="search" id="search">Search</button>
     </form>
-
   </body>
 </html>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
