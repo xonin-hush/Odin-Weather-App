@@ -1,0 +1,69 @@
+/* main css file */
+body {
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 6fr;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #cde4cd;
+  color: black;
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+}
+#header {
+  width: 100%;
+  background-color: #967bb6;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+.title {
+  font-weight: bolder;
+  font-size: 25px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin: 0.5em;
+}
+button {
+  /* align-self: end; */
+  background-color: #967bb6;
+  border-color: #967bb6;
+  border-radius: 10px;
+  border-style: solid;
+  width: 4.5em;
+  height: 2em;
+  margin-bottom: 2em;
+  /* justify-self: center; */
+
+  font-weight: bolder;
+}
+.temp-button {
+  width: fit-content;
+}
+button:hover {
+  background-color: #145274;
+  border-color: #145274;
+}
+.info {
+    max-height: 2em;
+    min-height: 2em;
+    font-size: 20px;
+}
+img{
+  max-height: 280px;
+  max-width: 500px;
+}
+h1 ,button{
+  color: white;
+}
