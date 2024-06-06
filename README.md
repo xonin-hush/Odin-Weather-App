@@ -1,14 +1,14 @@
-# [Weather App](https://todo.xonin.dev)
+# [Weather App](https://weather.xonin.dev)
 
 fifth project in "the odin project" JavaScript Course, it demonstrates Promises, async await as of other stuff. [The Odin Project-JavaScript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript).
 
 ## Links
 
-[Visit website](https://todo.xonin.dev)
+[Visit website](https://weather.xonin.dev)
 
 ## Features
 
-- Ability to Fetch data from weatherapi
+- Ability to Fetch data from weatherAPI
 - Ability to change Temperature units
 - Ability to handle errors
 
@@ -68,7 +68,7 @@ git checkout main
 
 then just go to netlify and deploy your project using on the new branch
 
-#### Srouces
+#### Sources
 
 - https://gist.github.com/cobyism/4730490
 - https://www.30secondsofcode.org/git/s/copy-file-from-branch
