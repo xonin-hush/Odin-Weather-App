@@ -23,6 +23,7 @@ html {
 }
 .title {
   font-weight: bolder;
+  font-size: 25px;
 }
 form {
   display: flex;
@@ -56,4 +57,9 @@ button:hover {
 .info {
     max-height: 2em;
     min-height: 2em;
+    font-size: 20px;
+}
+img{
+  max-height: 280px;
+  max-width: 500px;
 }
