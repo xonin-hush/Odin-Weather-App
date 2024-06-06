@@ -9,6 +9,8 @@ body {
   font-family: Poppins, sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: #cde4cd;
+  color: black;
 }
 
 html {
@@ -36,7 +38,6 @@ input {
 button {
   /* align-self: end; */
   background-color: #967bb6;
-  color: black;
   border-color: #967bb6;
   border-radius: 10px;
   border-style: solid;
@@ -62,4 +63,7 @@ button:hover {
 img{
   max-height: 280px;
   max-width: 500px;
+}
+h1 ,button{
+  color: white;
 }
