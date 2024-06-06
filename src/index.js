@@ -29,6 +29,7 @@ async function fetchWeather() {
 }
 
 function displayInfo(myWeather) {
+  console.log(myWeather)
   var currentLocation = document.querySelector("#current-location");
   var temperature = document.querySelector("#temp");
   var feelsLike = document.querySelector("#feels-like");
@@ -49,14 +50,19 @@ function displayInfo(myWeather) {
 }
 
 function changeUnit() {
-  // // console.log(myWeather)
-  // if (tempUnit === "C") {
-  //   tempUnit = "F";
-  //   // displayInfo(myWeather);
-  // }
-  // if (tempUnit === "F") {
-  //   tempUnit = "C";
-  //   // displayInfo(myWeather);
-  // }
-  console.log("helloddd")
+  window.addEventListener("click", (e) => {
+    event.preventDefault();
+    tempButton = document.getElementById("temp-button");
+    if (e.target.innerHTML == "°C / °F") {
+      if (tempUnit == "C") {
+        tempUnit = "F";
+        displayInfo(myWeather)
+      } else {
+        tempUnit = "C";
+        displayInfo(myWeather)
+      }
+      console.log(tempUnit);
+    }
+  });
 }
+changeUnit();
